@@ -12,3 +12,12 @@ pollutantmean <- function(directory, pollutant, id=1:332){ #As given by the ques
         }
         mean(pol_vect, na.rm=TRUE)
 }
+
+############Demo comparison##################
+# > pollutantmean("specdata","sulfate",1:10)
+# [1] 4.064128 - CORRECT
+# > pollutantmean("specdata","nitrate",70:72)
+# [1] 1.706047 - CORRECT
+# > pollutantmean("specdata","nitrate",23)
+# [1] 1.280833 - CORRECT
+#############################################
